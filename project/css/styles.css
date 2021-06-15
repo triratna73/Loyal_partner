@@ -1,0 +1,399 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* #74d14c  logo ko green  */
+/* #f7f7f7  logo ko white */
+/* #0e375e  logo ko blue  */
+header {
+  background: #74d14c;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+  background: #f7f7f7;
+  height: 4rem;
+  position: relative;
+}
+
+.logo{
+  height: 90px;
+}
+/* notification */
+.dropdown {
+  overflow: visible;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: rgb(43, 76, 224);
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown:hover .dropbtn {
+  color: rgb(0, 247, 255);
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 380px;
+  max-width: 400px;
+  right: 0;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content img {
+  width: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.itms {
+  display: flex;
+  padding: 5px 15px;
+}
+
+.itms p {
+  text-align: justify;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+/* login link */
+.login, .enquir {
+  text-decoration: none;
+  color: #0e375e;
+  background: #74d14c;
+  padding: 0.5rem 2rem;
+  font-size: 1.2rem;
+  font-weight: 550;
+}
+
+/* login / user ID info */
+.userinfo, .homepg {
+  display: inherit;
+  align-items: center;
+  font-size: 1.2rem;
+  color: #0e375e;
+  font-weight: 700;
+}
+
+.userinfo a, .homepg a {
+  text-decoration: none;
+  text-transform: capitalize;
+  padding: 0.5rem;
+  opacity: 0.9;
+}
+
+.userinfo a:visited, .homepg a:visited {
+  color: #0e375e;
+}
+
+.userinfo a:hover, .homepg a:hover {
+  opacity: 1;
+  color: #0578e6;
+  text-decoration: underline;
+}
+
+body {
+  background: #ADBEFF;
+}
+
+.login a, .login a:visited{
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0 1rem;
+  margin: 0.5rem 0;
+  color: #0e375e;
+  opacity: 0.9;
+}
+
+.login a:hover {
+  color: #0578e6;
+}
+
+.property {
+  font-size: 1.2rem;
+  border: #000 solid 2px;
+  display: flex;
+  justify-content: space-between;
+  background: #F0CCBC;
+  width: 80%;
+  margin: 1rem 0 1rem 10%;
+}
+
+.details {
+  margin: 1rem;
+}
+
+.property span{
+  display: block;
+  padding: 0.2rem;;
+}
+
+.booking-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  margin: 0 1.5rem 0 0;
+}
+
+.booking-options a{
+  display: block;
+  text-decoration: none;
+  padding: 0.5rem 0.5rem;
+  margin: 0.4rem 0;
+  color: #0e375e;
+  background: #19E642;
+}
+
+.booking-options a:hover {
+  color: #fff;
+  background: #146600;
+}
+
+/* login container */
+
+/* Bordered form */
+form {
+  border: 3px solid #f1f1f1;
+}
+
+/* Add padding to containers */
+.login-container {
+  padding: 1rem;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #8a30d3;
+  color: white;
+  padding: 14px 20px;
+  margin: 0.5rem 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover, input[type=submit]:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.new-user {
+  width: auto;
+  padding: 0.62rem 1.2rem;
+  background-color: #fff;
+}
+
+
+/* Sign up container */
+/* Full-width input fields */
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  padding: 14px 20px;
+  float: left;
+  width: 50%;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  background-color: #f44336;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Extra styles for signup button */
+.signupbtn {
+  background-color: #6a5acd;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 16px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* book and enquiry page */
+.propdetails span {
+  display: block;
+  text-transform: capitalize;
+  padding: 0.5rem 0;
+}
+
+.propdetails input[type="submit"] {
+  width: 1px;
+}
+
+.book_enqiure {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.book, .chat {
+  width: max-content;
+}
+
+.book input[type="submit"]{
+  padding: 0.5rem 1rem;
+  border: none;
+}
+
+article {
+	width: 90%;
+	margin: 2rem 0 0 5%;
+}
+
+/* table */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	border: 1px solid #ddd;
+  }
+  
+  th {
+    background: #96EDDC;
+  }
+
+  th, td {
+	text-align: left;
+	padding: 16px;
+  }
+  
+  tr:nth-child(even) {
+	background-color: #F2F5F8;
+  }
+
+  .delete {
+    padding: 0 0.5rem;
+}
+
+table a {
+	text-decoration: none;
+}
+
+/* edit profile */
+.editbtn {
+  padding: 1rem;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.profile h5 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.form_container form {
+  background: #EEFCF9;
+  font-size: 1.2rem;
+}
+
+.form_container .cont {
+  width: 90%;
+  margin: 0.5rem 0 0.5rem 5%;
+}
+
+.form_container label {
+  margin: 0.5rem;
+}
+
+.form_container form input[type="submit"] {
+  text-decoration: none;
+  color: #000;
+  background: #fff;
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  font-weight: 550;
+  margin: 0.2rem 0;
+}
+
+/* chat messages   */
+.chattemplate {
+  position: relative;
+  background: #DDE8F9;
+}
+
+.messages {
+  min-height: 24rem;;
+	max-height: 25rem;
+	overflow: auto;
+}
+
+.messagebox {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.messageby {
+	text-align: left;
+	margin-left: 0.6rem;
+	font-size: 1.2rem;
+}
+
+.messageto {
+	text-align: right;
+	margin-right: 0.6rem;
+	font-size: 1.2rem;
+  overflow-wrap: break-word;
+}
+
+.messagebox form{
+	display: flex;
+  overflow-wrap: break-word;
+}
+
+.messagebox form input[type="submit"] {
+	padding: 0 12px;
+	margin: 0;
+	bottom: 0;
+}
+
+.messagebox form input[type="text"] {
+	margin: 0;
+}
